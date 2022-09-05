@@ -1,0 +1,7 @@
+[user]
+	name = Evrixol
+	email = 56212925+Evrixol@users.noreply.github.com
+	signingkey = CFEB1C2D85225F7D
+[gpg]
+	format = openpgp
+
