@@ -8,8 +8,6 @@ call plug#begin()
 	Plug 'plasticboy/vim-markdown'
 call plug#end()
 
-PlugUpdate
-
 " NERDTree plugin conf.
 "" Hotkeys
 nnoremap <leader>n :NERDTreeFocus<CR>
