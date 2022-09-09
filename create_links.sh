@@ -10,7 +10,7 @@
 ## cygwin
 
 linkFiles=(".bashrc" ".bash_aliases" ".vimrc" ".gitconfig" ".vim/" ".profile")
-fileActual=("bashrc" "bash_aliases" "vimrc" "git_config" "vim/" "profile")
+fileActual=("bashrc" "bash_aliases" "vimrc" "gitconfig" "vim/" "profile")
 
 case "$OSTYPE" in
 	"linux-gnu")
