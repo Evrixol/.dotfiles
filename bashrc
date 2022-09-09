@@ -7,6 +7,8 @@
 ## If shell has been invoked as a non-interactive instance, do not configure the instance. (Exit .bashrc config.)
 [[ "$-" != *i* ]] && return
 
+export EDITOR=vim
+
 # Shell Options
 ## Use case-insensitive filename globbing
 shopt -s nocaseglob
