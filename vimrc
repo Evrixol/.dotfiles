@@ -23,12 +23,25 @@ set ruler
 set number
 syntax on
 colorscheme onedark
+
 "" Control handling.
 set backspace=indent,eol,start
 set nofoldenable
 set clipboard=unnamed
-set noexpandtab
+
+"" Indentation and whitespace.
+""" Sizing, format, handling.
 set tabstop=4
-set autoindent
-"" Miscellanious conf.
-set laststatus=2
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
+
+""" Whitespace visibility.
+set listchars=space:_,tab:>~ list
+
+""" Automatic indent conf.
+set noautoindent
+
+"" Miscellanious configuration.
+set laststatus=2 " I still don't know what this does.
+
