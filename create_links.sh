@@ -16,7 +16,13 @@ case "$OSTYPE" in
 	"linux-gnu")
 		for i in ${!fileActual[@]}
 		do
-			ln -s "${HOME}/.dotfiles/${fileActual[$i]}" "${HOME}/${linkFiles[$i]}"
+			if [[ "$(echo \"${fileActual[$i]}\" | grep -e='\w+\/' )" ]];
+			then
+				echo "Encountered directory."
+				ln -sd "${HOME}/.dotfiles/${fileActual[$i]}" "${HOME}/${linkFiles[$i]}"
+			else
+				ln -s "${HOME}/.dotfiles/${fileActual[$i]}" "${HOME}/${linkFiles[$i]}"
+			fi
 		done
 		;;
 	"msys" | "cygwin" )
