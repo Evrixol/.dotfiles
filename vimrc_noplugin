@@ -1,0 +1,27 @@
+" This vim configuration file is expressly made to run without plugins, themes, or a plugin-loader.
+
+" Vim configuration section.
+"" User interface.
+set ruler
+set number
+syntax on
+colorscheme default
+
+"" Control handling.
+set backspace=indent,eol,start
+set nofoldenable
+set clipboard=unnamed
+
+"" Indentation and whitespace.
+""" Whitespace sizing, format, and  handling.
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
+
+""" Whitespace visibility.
+set listchars=space:_,tab:>~ list
+
+""" Automatic indention configuration.
+set autoindent
+
