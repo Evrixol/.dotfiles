@@ -2,10 +2,7 @@
 
 " Init plugins.
 call plug#begin()
-	Plug 'joshdick/onedark.vim'
-	Plug 'itchyny/lightline.vim'
-	Plug 'preservim/nerdtree'
-	Plug 'plasticboy/vim-markdown'
+	Plug 'tomasr/molokai'
 call plug#end()
 
 " NERDTree plugin conf.
@@ -22,7 +19,7 @@ let NERDTreeShowHidden=1
 set ruler
 set number
 syntax on
-colorscheme onedark
+colorscheme molokai
 
 "" Control handling.
 set backspace=indent,eol,start
@@ -40,7 +37,7 @@ set noexpandtab
 set listchars=space:_,tab:>~ list
 
 """ Automatic indent conf.
-set noautoindent
+set autoindent
 
 "" Miscellanious configuration.
 set laststatus=2 " I still don't know what this does.
