@@ -2,7 +2,8 @@
 
 " Init plugins.
 call plug#begin()
-	Plug 'tomasr/molokai'
+"	Plug 'tomasr/molokai'
+	Plug 'preservim/nerdtree'
 call plug#end()
 
 " NERDTree plugin conf.
@@ -19,11 +20,10 @@ let NERDTreeShowHidden=1
 set ruler
 set number
 syntax on
-colorscheme molokai
+set laststatus=2
 
 "" Control handling.
 set backspace=indent,eol,start
-set nofoldenable
 set clipboard=unnamed
 
 "" Indentation and whitespace.
@@ -36,9 +36,8 @@ set noexpandtab
 """ Whitespace visibility.
 set listchars=space:_,tab:>~ list
 
-""" Automatic indent conf.
+""" Automatic formatting.
 set autoindent
-
-"" Miscellanious configuration.
-set laststatus=2 " I still don't know what this does.
+set nofoldenable
+set textwidth=120
 
