@@ -4,6 +4,7 @@
 call plug#begin()
 "	Plug 'tomasr/molokai'
 	Plug 'preservim/nerdtree'
+	Plug 'nfnty/vim-nftables'
 call plug#end()
 
 " NERDTree plugin conf.

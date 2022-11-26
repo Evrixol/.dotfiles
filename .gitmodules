@@ -1,3 +1,6 @@
 [submodule "vim/plugged/molokai"]
 	path = vim/plugged/molokai
 	url = https://github.com/tomasr/molokai
+[submodule "vim/plugged/vim-nftables"]
+	path = vim/plugged/vim-nftables
+	url = https://github.com/nfnty/vim-nftables
