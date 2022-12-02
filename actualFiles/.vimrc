@@ -2,7 +2,6 @@
 
 " Init plugins.
 call plug#begin()
-	Plug 'joshdick/onedark.vim'
 	Plug 'itchyny/lightline.vim'
 	Plug 'nfnty/vim-nftables'
 call plug#end()
@@ -13,7 +12,6 @@ set ruler
 set number
 syntax on
 set laststatus=2
-colorscheme onedark
 
 "" Control handling.
 set backspace=indent,eol,start
@@ -23,13 +21,14 @@ set clipboard=unnamed
 """ Indentation config.
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set noexpandtab
 
 """ Automatic formatting.
 set autoindent
 set wrap
 set nofoldenable
-set textwidth=120
+set textwidth=200
 
 """ Whitespace visibility.
 set listchars=space:_,tab:>~ list
