@@ -16,7 +16,7 @@
 # User dependent .profile file
 
 # Set user-defined locale
-export LANG=$(locale -uU)
+export LANG="en_US.UTF-8"
 
 # This file is not read by bash(1) if ~/.bash_profile or ~/.bash_login
 # exists.
