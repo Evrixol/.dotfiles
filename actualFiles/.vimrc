@@ -4,7 +4,7 @@ set number
 set linebreak
 set laststatus=2
 set listchars=space:·,tab:◎· list
-color onedark
+"color onedark
 
 syntax enable
 set syntax=auto
@@ -19,3 +19,5 @@ set noexpandtab " No tabs made of spaces.
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+set backspace=2
