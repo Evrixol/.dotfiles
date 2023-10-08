@@ -1,34 +1,21 @@
-" Vim plugin loader is "Vim-Plugged"
-
-" Init plugins.
-call plug#begin()
-	Plug 'itchyny/lightline.vim'
-	Plug 'nfnty/vim-nftables'
-call plug#end()
-
-" Vim conf.
-"" UI display.
+" Display & QoL
 set ruler
 set number
-syntax on
+set linebreak
 set laststatus=2
+set listchars=space:·,tab:◎· list
+color onedark
 
-"" Control handling.
-set backspace=indent,eol,start
-set clipboard=unnamed
+syntax enable
+set syntax=auto
+syntax on
 
-"" Indentation and whitespace.
-""" Indentation config.
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set noexpandtab
-
-""" Automatic formatting.
+" Handling
 set autoindent
-set wrap
+set smartindent
 set nofoldenable
-set textwidth=200
+set noexpandtab " No tabs made of spaces.
 
-""" Whitespace visibility.
-set listchars=space:_,tab:>~ list
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
