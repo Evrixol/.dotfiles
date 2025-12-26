@@ -1,1 +1,3 @@
 actualFiles/.gitconfig
+actualFiles/.ssh/config.d
+actualFiles/.ssh/config.d/*
